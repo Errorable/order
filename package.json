@@ -1,7 +1,7 @@
 {
-  "name": "errorable-admin",
+  "name": "errorable-order",
   "version": "0.0.1",
-  "description": "admin errors for errorable",
+  "description": "order errors for errorable",
   "homepage": "",
   "author": {
     "name": "calidion",
@@ -15,7 +15,7 @@
   "keywords": [
     "error",
     "node",
-    "admin"
+    "order"
   ],
   "devDependencies": {
     "errorable": "^0.2.0",
@@ -35,7 +35,7 @@
       "mocha": true
     }
   },
-  "repository": "calidion/errorable-admin",
+  "repository": "calidion/errorable-order",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
