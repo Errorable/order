@@ -1,11 +1,13 @@
 'use strict';
 
 var assert = require('assert');
-var errorableAdmin = require('../lib');
+var errorableOrder = require('../lib');
 var errorable = require('errorable');
 var Generator = errorable.Generator;
-var cnErrors = new Generator(errorableAdmin, 'zh-CN').errors;
-var enUsErrors = new Generator(errorableAdmin, 'en-US').errors;
+var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
+var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
+
+console.log(cnErrors);
 
 var errorCount = 0;
 
@@ -20,12 +22,9 @@ describe('errorable-admin', function () {
   it('should have administrator errors in zh-CN!', function () {
     var count = 0;
     var errors = {
-      AdminNotFound: '管理员未找到！',
-      AdminNotLoggedIn: '管理员未登录！',
-      AdminExisted: '管理员已经存在！',
-      AdministratorNotFound: '管理员未找到！',
-      AdministratorNotLoggedIn: '管理员未登录！',
-      AdministratorExisted: '管理员已经存在！'
+      OrderNotFound: '订单未找到！',
+      OrderNotUpdated: '订单未更新！',
+      OrderStateTransferNotAllowed: '订单状态转换不被允许！',
     };
     console.log(errors);
     for (var k in errors) {
@@ -40,12 +39,9 @@ describe('errorable-admin', function () {
   it('should have administrator errors in en-US!', function () {
     var count = 0;
     var errors = {
-      AdminNotFound: 'Administrator Not Found!',
-      AdminNotLoggedIn: 'Administrator Not Logged In!',
-      AdminExisted: 'Administrator Existed!',
-      AdministratorNotFound: 'Administrator Not Found!',
-      AdministratorNotLoggedIn: 'Administrator Not Logged In!',
-      AdministratorExisted: 'Administrator Existed!'
+      OrderNotFound: 'Order Not Found!',
+      OrderNotUpdated: 'Order Not Updated!',
+      OrderStateTransferNotAllowed: 'Order State Transfter Not Allowed!',
     };
 
     for (var k in errors) {
