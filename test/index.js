@@ -7,13 +7,10 @@ var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
 
-console.log(cnErrors);
-
 var errorCount = 0;
 
 for (var k in cnErrors) {
   if (cnErrors[k] instanceof Object) {
-    console.log(cnErrors[k]);
     errorCount++;
   }
 }
@@ -24,9 +21,8 @@ describe('errorable-admin', function () {
     var errors = {
       OrderNotFound: '订单未找到！',
       OrderNotUpdated: '订单未更新！',
-      OrderStateTransferNotAllowed: '订单状态转换不被允许！',
+      OrderStateTransferNotAllowed: '订单状态转换不被允许！'
     };
-    console.log(errors);
     for (var k in errors) {
       if (typeof errors[k] === 'string') {
         assert.equal(true, cnErrors[k].message === errors[k]);
@@ -41,7 +37,7 @@ describe('errorable-admin', function () {
     var errors = {
       OrderNotFound: 'Order Not Found!',
       OrderNotUpdated: 'Order Not Updated!',
-      OrderStateTransferNotAllowed: 'Order State Transfter Not Allowed!',
+      OrderStateTransferNotAllowed: 'Order State Transfter Not Allowed!'
     };
 
     for (var k in errors) {

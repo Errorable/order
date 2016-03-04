@@ -1,38 +1,35 @@
-# errorable-admin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> admin errors for errorable
+# errorable-order [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> order errors for errorable
 
 ## Installation
 
 ```sh
-$ npm install --save errorable-admin
+$ npm install --save errorable-order
 ```
 
 ## Usage
 
 ```js
 var errorable = require('errorable');
-var errorableAdmin = require('errorable-admin');
+var errorableOrder = require('errorable-order');
 var Generator = errorable.Generator;
-var cnErrors = new Generator(errorableAdmin, 'zh-CN').errors;
-var enUsErrors = new Generator(errorableAdmin, 'en-US').errors;
+var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
+var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
 
-// AdminNotFound
-// AdminNotLoggedIn
-// AdminExisted
-// AdministratorNotFound
-// AdministratorNotLoggedIn
-// AdministratorExisted
+// OrderNotFound
+// OrderNotUpdated
+// OrderStateTransferNotAllowed
 ```
 ## License
 
 MIT © [calidion](calidion.github.io)
 
 
-[npm-image]: https://badge.fury.io/js/errorable-admin.svg
-[npm-url]: https://npmjs.org/package/errorable-admin
-[travis-image]: https://travis-ci.org/calidion/errorable-admin.svg?branch=master
-[travis-url]: https://travis-ci.org/calidion/errorable-admin
-[daviddm-image]: https://david-dm.org/calidion/errorable-admin.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/calidion/errorable-admin
-[coveralls-image]: https://coveralls.io/repos/calidion/errorable-admin/badge.svg
-[coveralls-url]: https://coveralls.io/r/calidion/errorable-admin
+[npm-image]: https://badge.fury.io/js/errorable-order.svg
+[npm-url]: https://npmjs.org/package/errorable-order
+[travis-image]: https://travis-ci.org/Errorable/errorable-order.svg?branch=master
+[travis-url]: https://travis-ci.org/Errorable/errorable-order
+[daviddm-image]: https://david-dm.org/Errorable/errorable-order.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/Errorable/errorable-order
+[coveralls-image]: https://coveralls.io/repos/Errorable/errorable-order/badge.svg
+[coveralls-url]: https://coveralls.io/r/Errorable/errorable-order
