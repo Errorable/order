@@ -27,9 +27,9 @@ MIT © [calidion](calidion.github.io)
 
 [npm-image]: https://badge.fury.io/js/errorable-order.svg
 [npm-url]: https://npmjs.org/package/errorable-order
-[travis-image]: https://travis-ci.org/Errorable/errorable-order.svg?branch=master
-[travis-url]: https://travis-ci.org/Errorable/errorable-order
-[daviddm-image]: https://david-dm.org/Errorable/errorable-order.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Errorable/errorable-order
-[coveralls-image]: https://coveralls.io/repos/Errorable/errorable-order/badge.svg
-[coveralls-url]: https://coveralls.io/r/Errorable/errorable-order
+[travis-image]: https://travis-ci.org/Errorable/order.svg?branch=master
+[travis-url]: https://travis-ci.org/Errorable/order
+[daviddm-image]: https://david-dm.org/Errorable/order.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/Errorable/order
+[coveralls-image]: https://coveralls.io/repos/Errorable/order/badge.svg
+[coveralls-url]: https://coveralls.io/r/Errorable/order
